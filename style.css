@@ -1,31 +1,134 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+/* Reset some defaults */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
+
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #fff;
+}
+
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-input, textarea, button {
+  background-color: #2d2d2d;
+  padding: 30px;
+  border-radius: 15px;
   width: 100%;
-  margin: 5px 0;
-  padding: 10px;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+input[type="date"] {
+  color: #333;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffc400;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .filters button {
-  margin-right: 5px;
+  flex: 1;
+  margin: 0 5px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
 }
-.task {
-  background: #eee;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
+
+.filters button:hover {
+  background-color: #666;
 }
-.completed {
+
+ul#task-list {
+  list-style: none;
+}
+
+li {
+  background-color: #404040;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+li.completed {
+  background-color: #2e7d32;
   text-decoration: line-through;
-  color: green;
+  color: #ccc;
+}
+
+li.pending {
+  background-color: #8e44ad;
+}
+
+li span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+li button {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+li button:hover {
+  background-color: #c0392b;
 }
