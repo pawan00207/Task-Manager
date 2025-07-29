@@ -19,6 +19,6 @@ This app is deployed on GitHub Pages.
 
 ## 📦 Run Locally
 ```bash
-git clone https://github.com/<pawan00207>/Task-Manager.git
+git clone https://github.com/pawan00207/Task-Manager.git
 cd Task-Manager
 open index.html in your browser
