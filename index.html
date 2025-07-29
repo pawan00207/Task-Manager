@@ -1,20 +1,19 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Task Manager | Algonive Internship</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>📝 Task Manager</h1>
 
     <form id="task-form">
-      <input type="text" id="title" placeholder="Task Title" required/>
-      <textarea id="description" placeholder="Task Description" required></textarea>
-      <input type="datetime-local" id="due-date" required/>
+      <input type="text" id="title" placeholder="Task Title" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="date" id="due-date" required />
       <button type="submit">Add Task</button>
     </form>
 
